@@ -22,12 +22,12 @@
         <li *ngIf="!authService.user" [routerLinkActive]="['active']">
           <a [routerLink]="['/user/registration']">Registration</a>
         </li>
-        <li *ngIf="!authService.user" [routerLinkActive]="['active']">
-          <a [routerLink]="['/user/login']">Log In</a>
+        <li  *ngIf="!authService.user" [routerLinkActive]="['active']">
+          <a id="loginn" [routerLink]="['/user/login']">Log In</a>
         </li>
         <li *ngIf="!!authService.user">
-          <div>
-            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          <div id="user">
+            <span   class="glyphicon glyphicon-user" aria-hidden="true"></span>
             {{authService.user.name}}
           </div>
         </li>
